@@ -1,0 +1,19 @@
+/* 
+    Document    : 1_URL
+    Description : URL pré écrite pour permettre le test de la callback du serveur
+                  URL envoyé par le poste de suivi suite à la présence de nouvelles 
+                    valeurs ou états.
+    Created on  : Février 2019
+    Author      : Fabre
+*/
+
+localhost :
+http://localhost:8084/imp3D/imp3dControl.jsp?callBackType=temp_hygro&TP=213&HY=40
+http://localhost:8084/imp3D/imp3dControl.jsp?callBackType=etat_cartouches&MT=idcartouche&RM=20/03/2019&DM=1/03/2019&SM=numserie&QM=85.9&SP=idtypecar&RS=16/03/2019&DS=10/03/2019&SS=numseriesupp&QS=95.4
+http://localhost:8084/imp3D/imp3dControl.jsp?callBackType=etat_job&JB=ndj&ID=iduser&TC=10&TR=24&ST=en_cours&ES=54.6&EM=23.4&SC=10.5&MC=2.5
+
+Intranet :
+
+Internet :
+http://localhost:8084/imp3D/imp3dControl.jsp?callBackType=temp_hygro&TP=213&HY=40
+http://localhost:8084/imp3D/imp3dControl.jsp?callBackType=etat_cartouches&MT=idcartouche&RM=20/03/2019&DM=1/03/2019&SM=numserie&QM=85.9&SP=idtypecar&RS=16/03/2019&DS=10/03/2019&SS=numseriesupp&QS=95.4

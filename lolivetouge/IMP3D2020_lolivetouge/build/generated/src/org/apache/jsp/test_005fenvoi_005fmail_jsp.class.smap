@@ -1,0 +1,10 @@
+SMAP
+test_005fenvoi_005fmail_jsp.java
+JSP
+*S JSP
+*F
++ 0 test_envoi_mail.jsp
+test_envoi_mail.jsp
+*L
+5,16:47
+*E
