@@ -60,6 +60,8 @@ public class JobTest {
     /**
      * Test of save method, of class Job.
      */
+    
+    /*
     @Test
     public void testSave() throws Exception {
         System.out.println("save");
@@ -74,7 +76,8 @@ public class JobTest {
         assertEquals(Nom2, test.getNom());
         result.delete(con);  
     }
-
+    */
+    
     /**
      * Test of size method, of class Job.
      */
@@ -82,9 +85,21 @@ public class JobTest {
     public void testSize() throws Exception {
         System.out.println("size");
             Connection con = ConnexionMySQL.newConnexion();
-        int expResult = 1;
+        int expResult = 5;
         int result = Job.size(con);
         assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testGetLast() throws Exception{
+        System.out.println("GetLast");
+        Connection con = ConnexionMySQL.newConnexion();
+        String Nom = "salut2.stp";
+        String FileRef = "/home/alex/";
+        Job result = Job.create(con, Nom, FileRef, Utils.stringToTimestamp("2019/05/17 11:00:00"), Utils.stringToTimestamp("2019/05/17 11:00:00"), "IMPR", 0, 0, 0, 0, 0, 0, 0, 1, 1);
+        Job test = Job.getLast(con);
+        assertEquals(Nom, test.getNom());
+        result.delete(con);
     }
 
     /**
